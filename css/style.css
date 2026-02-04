@@ -34,6 +34,12 @@ body {
 
 
 /* == mainの編集 （ここから）== */
+/* 猫の画像 */
+.charactor {
+    width: 630px;
+    margin-left: 20px;
+}
+
 /* アイテムの構成 */
 .product-list {
     display: grid;
