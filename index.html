@@ -10,46 +10,53 @@
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
         <link rel="stylesheet" href="css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="js/main.js" defer></script>
+        <script src="js/index.js" defer></script>
+        <link rel="icon" href="img/favicon.png" type="image/svg+xml">
     </head>
     <body>
+        <!-- ローディング画面 -->
+        <!-- <div id="loading">
+            <img src="img/" alt="ローディング">
+            <div id="loading-screen"></div>
+        </div> -->
+        <!-- タイトル -->
         <header id="header" class="wrapper">
             <h1 class="site-title">My Profile</h1>
+            <!-- ハンバーガーメニュー -->
+            <nav>
+                <button type="button" id="menu-open" class="btn-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div id="menu-panel">
+                    <button type="button" id="menu-close" class="btn-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <!-- ナビゲーションの中身 -->
+                    <ul class="menu-list">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="company.html">company</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+            </nav>
         </header>
         <main>
-            <img class="charactor" src="img/Designer.png" alt="黒猫ちゃん">
-            
-            <div id="top" class="wrapper">
-                <ul class="product-list">
-                    <li>
-                        <a href="#">
-                            <img src="img/item1.jpg" alt="item1">
-                            <p>プロダクトタイトル</p>
-                            <p>￥99,999 +tax</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/item2.jpg" alt="item2">
-                            <p>プロダクトタイトル</p>
-                            <p>￥99,999 +tax</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/item3.jpg" alt="item3">
-                            <p>プロダクトタイトル</p>
-                            <p>￥99,999 +tax</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/item4.jpg" alt="item4">
-                            <p>プロダクトタイトル</p>
-                            <p>￥99,999 +tax</p>
-                        </a>
-                    </li>
-                </ul>
+            <div class="content1">
+                <div class="character-container">
+                    <div class="balloon">
+                        <p id="random-message">読み込み中...</p>
+                    </div>
+                    <img id="character" src="img/black-cat.png" alt="黒猫ちゃん">
+                </div>
+                <div>
+                    <h4>植田美幸</h4>
+                    <p>～年～月～日生まれ</p>
+                </div>
             </div>
         </main>
         <footer>
