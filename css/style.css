@@ -25,6 +25,7 @@ body {
 }
 h2 {
     text-align: center;
+    margin-bottom: 40px;
 }
 .distance {
     margin-bottom: 70px;
@@ -185,6 +186,27 @@ h2 {
     padding-top: 30px;
     padding-left: 120px;
 }
+
+
+/* My Skill ３つのコンテンツ*/
+.content2 {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    justify-content: center;
+}
+
+.content2 li {
+    background: #fff;        /* ← 白背景 */
+    border: 2px solid #333;  /* ← 枠を既存デザインと統一 */
+    border-radius: 15px;     /* ← 角丸で可愛い感じ */
+    width: 220px;            /* カード幅 */
+    padding: 20px;           /* 内側余白 */
+    text-align: center;      /* 中央揃え */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1); /* 軽い影 */
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
 
 /* アイテムの構成 */
 /* .product-list {
