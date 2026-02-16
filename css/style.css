@@ -4,7 +4,6 @@
   /* サイト全体で使う色を先に変数で定義 */
     --purple-main: rgb(227,216,234);
     --purple-sub: rgb(160,136,190);
-    --pink: rgb(247,196,186);
     --oswald-font: "", sans-serif;
 }
 
@@ -16,7 +15,7 @@ body {
 }
 /* wrapperで表示サイズを調整する */
 .wrapper {
-    width: 100vw;
+    width: 100%;
     max-width: 1360px;
     margin: 0 auto;
     padding: 0 40px;
@@ -47,46 +46,28 @@ h2 {
     right: 1rem;
     top: 1rem;
     z-index: 4; /* 重なり位置 */
+    margin-right: 2.5rem;
     padding: 0.5rem 1rem;
     height: 3.8rem;
     width: 3.8rem;
+    display: grid;
+    place-items: center;      /* 画像を中央に */
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
-/* 開くボタン */
-#menu-open span {
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    position: relative;
-    display: block;
+.btn-menu:hover {
+    transform: translateY(-3px);
 }
-  /* 三本線 */
-#menu-open span:nth-child(1) {
-    top: 0;
-}
-#menu-open span:nth-child(2) {
-    margin: 8px 0;
-}
-#menu-open span:nth-child(3) {
-    top: 0;
+#menu-close img{
+    transform: rotate(-90deg);
 }
 
-/* 閉じるボタン */
-#menu-close span {
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    position: relative; 
-    display: block;
-}
-#menu-close span:nth-child(1) {
-    transform: rotate(45deg);
-    translate: 0 3.5px;
-}
-#menu-close span:nth-child(2) {
-    opacity: 0;
-}
-#menu-close span:nth-child(3) {
-    transform: rotate(-45deg);
+/* アクセシビリティ：キーボードフォーカス見える化 */
+.btn-menu:focus-visible{
+    outline: 3px solid #6ea6ff;
+    outline-offset: 3px;
 }
 
 /* スライドメニューパネル */
