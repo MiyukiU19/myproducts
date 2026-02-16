@@ -18,7 +18,6 @@ openBtn.addEventListener('click',()=>{
         },
     menuOptions
     );
-    
 });
 
 // メニューを閉じる処理

@@ -115,10 +115,6 @@ body {
 .content1 {
     display: flex;
 }
-.content1 #character {
-    width: 320px;
-    margin: 100px 0 0 110px;
-}
 
 /* 吹き出し */
 .character-container {
@@ -129,20 +125,35 @@ body {
 
 .character-container img {
     width: 320px;
-    margin: 100px 0 0 110px;
+    margin: 125px 0 0 110px;
 
 }
 
+/* 吹き出し */
 .balloon {
     position: absolute;
-    top: -60px; /* 猫の頭の上に調整 */
-    left: 50%;
+    top: 10px;
+    left: 265px; 
     transform: translateX(-50%);
     background-color: #fff;
     border: 2px solid #333;
-    border-radius: 15px;
-    padding: 10px;
+    border-radius: 48%;
+    height: 130px;
+    width: 270px;
+    padding: 20px;
     min-width: 120px;
+}
+
+/* 吹き出しのしっぽ（外側の黒いフチ） */
+.balloon::before {
+    content: "";
+    position: absolute;
+    bottom: -12px;               /* 大きい分だけ少し下へ */
+    left: 50%;
+    margin-left: -12px;          /* 中央合わせ（幅=border-width） */
+    border-width: 12px 12px 0;   /* 一回り大きい三角 */
+    border-style: solid;
+    border-color: #333 transparent transparent;  /* 外側＝枠色 */
 }
 
 /* 吹き出しのしっぽ（三角部分） */
@@ -155,6 +166,10 @@ body {
     border-width: 10px 10px 0;
     border-style: solid;
     border-color: #fff transparent transparent;
+}
+
+#random-message {
+    margin-top: 25px;
 }
 
 /* アイテムの構成 */
