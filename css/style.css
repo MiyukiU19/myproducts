@@ -8,6 +8,8 @@
     --oswald-font: "", sans-serif;
 }
 
+/* メモ　margin外側　padding内側 */
+
 /* == 全体の編集 （ここから）== */
 body {
     background-color: var(--purple-main);
@@ -20,6 +22,12 @@ body {
     padding: 0 40px;
     object-fit: cover;
     margin-bottom: 30px;
+}
+h2 {
+    text-align: center;
+}
+.distance {
+    margin-bottom: 70px;
 }
 /* == 全体の編集 （ここまで）== */
 
@@ -125,7 +133,7 @@ body {
 
 .character-container img {
     width: 320px;
-    margin: 125px 0 0 110px;
+    margin: 125px 0 0 100px;
 
 }
 
@@ -133,7 +141,7 @@ body {
 .balloon {
     position: absolute;
     top: 10px;
-    left: 265px; 
+    left: 255px; 
     transform: translateX(-50%);
     background-color: #fff;
     border: 2px solid #333;
@@ -172,8 +180,14 @@ body {
     margin-top: 25px;
 }
 
+/* プロフィール部分 */
+.profile {
+    padding-top: 30px;
+    padding-left: 120px;
+}
+
 /* アイテムの構成 */
-.product-list {
+/* .product-list {
     display: grid;
     gap: 20px;
     list-style: none;
@@ -194,7 +208,7 @@ body {
 }
 .product-list img:hover {
     opacity: 0.7;
-}
+} */
 /* == mainの編集 （ここまで）== */
 
 

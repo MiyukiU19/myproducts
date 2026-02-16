@@ -29,3 +29,21 @@ closeBtn.addEventListener('click',()=>{
     menuOptions
     );
 });
+
+
+// 吹き出しのランダムメッセージ
+function randomMessage() {
+    const messages = [
+        "こんにちは！", 
+        "こんばんは！", 
+        "おはよう！", 
+        "はろー！", 
+        "やほー！"
+    ];
+
+    const el = document.getElementById("random-message");
+    el.textContent = messages[Math.floor(Math.random() * messages.length)];
+}
+
+document.addEventListener("DOMContentLoaded", randomMessage);
+``
