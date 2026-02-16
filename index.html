@@ -15,10 +15,17 @@
     </head>
     <body>
         <!-- ローディング画面 -->
-        <!-- <div id="loading">
-            <img src="img/" alt="ローディング">
-            <div id="loading-screen"></div>
-        </div> -->
+        <div id="loader" aria-live="polite" aria-label="読み込み中" role="status">
+            <div class="loader__box">
+                <!-- 中央の画像（差し替えOK） -->
+                <img src="img/loading.png">
+                <!-- 5つの丸 -->
+                <div class="loader__dots" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+
         <!-- タイトル -->
         <header id="header" class="wrapper">
             <h1 class="site-title">My Profile</h1>

@@ -1,3 +1,29 @@
+// ★ローディング画面
+
+// ローダーを最低でもこれだけは表示してから消す（ミニマム表示時間）
+const MIN_DURATION = 600; // ms（任意で調整）
+
+const loader = document.getElementById('loader');
+const start = performance.now();
+
+function hideLoader() {
+    const elapsed = performance.now() - start;
+    const wait = Math.max(0, MIN_DURATION - elapsed);
+    setTimeout(() => loader?.classList.add('is-hidden'), wait);
+}
+
+// ページの初期パース完了時点でもう少し待機しておく場合（任意）
+// document.addEventListener('DOMContentLoaded', () => {});
+
+window.addEventListener('load', hideLoader);
+
+// 画像読み込み失敗などでロードイベントが来ない最悪ケース対策（タイムアウト）
+setTimeout(() => {
+    if (!loader.classList.contains('is-hidden')) hideLoader();
+}, 8000); // 8秒で強制的に閉じる（任意）
+``
+
+
 // ★スライドメニュー
 const openBtn = document.querySelector("#menu-open") //開くボタン
 const closeBtn = document.querySelector("#menu-close") //閉じるボタン
@@ -31,7 +57,7 @@ closeBtn.addEventListener('click',()=>{
 });
 
 
-// 吹き出しのランダムメッセージ
+// ★吹き出しのランダムメッセージ
 function randomMessage() {
     const messages = [
         "こんにちは！", 
