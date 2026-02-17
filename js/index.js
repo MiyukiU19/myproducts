@@ -1,7 +1,7 @@
 // ★ローディング画面
 
 // ローダーを最低でもこれだけは表示してから消す（ミニマム表示時間）
-const MIN_DURATION = 600; // ms（任意で調整）
+const MIN_DURATION = 1300; // ms（任意で調整）
 
 const loader = document.getElementById('loader');
 const start = performance.now();
@@ -35,7 +35,6 @@ const menuOptions = {
     easing:'ease',
     fill:'forwards'
 }
-
 // メニューを開く処理
 openBtn.addEventListener('click',()=>{
     menuPanel.animate(
@@ -45,7 +44,6 @@ openBtn.addEventListener('click',()=>{
     menuOptions
     );
 });
-
 // メニューを閉じる処理
 closeBtn.addEventListener('click',()=>{
     menuPanel.animate(
