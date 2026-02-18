@@ -4,6 +4,7 @@
   /* サイト全体で使う色を先に変数で定義 */
     --purple-main: rgb(227,216,234);
     --purple-sub: rgb(160,136,190);
+    --black-cat: rgb(64,66,71);
     --oswald-font: "Oswald", sans-serif;
 }
 
@@ -213,7 +214,7 @@ a {
     left: 255px; 
     transform: translateX(-50%);
     background-color: #fff;
-    border: 2px solid #333;
+    border: 2px solid var(--black-cat);
     border-radius: 48%;
     height: 130px;
     width: 270px;
@@ -230,7 +231,7 @@ a {
     margin-left: -12px;          /* 中央合わせ（幅=border-width） */
     border-width: 12px 12px 0;   /* 一回り大きい三角 */
     border-style: solid;
-    border-color: #333 transparent transparent;  /* 外側＝枠色 */
+    border-color: var(--black-cat) transparent transparent;  /* 外側＝枠色 */
 }
 
 /* 吹き出しのしっぽ（三角部分） */
@@ -258,7 +259,7 @@ a {
 .profile {
     margin: 30px 0 0 100px;
     padding: 30px 25px 0px 46px;
-    border: 2px solid #333;
+    border: 2px solid var(--black-cat);
     border-radius: 60px;
     background-color: #fff;
 }
