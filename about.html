@@ -15,10 +15,17 @@
     </head>
     <body>
         <!-- ローディング画面 -->
-        <!-- <div id="loading">
-            <img src="img/" alt="ローディング">
-            <div id="loading-screen"></div>
-        </div> -->
+        <div id="loader" aria-live="polite" aria-label="読み込み中" role="status">
+            <div class="loader__box">
+                <!-- 中央の画像（差し替えOK） -->
+                <img src="img/loading.png">
+                <!-- 5つの丸 -->
+                <div class="loader__dots" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+
         <!-- タイトル -->
         <header id="header" class="wrapper">
             <h1 class="site-title">My Profile</h1>
@@ -26,13 +33,13 @@
             <nav>
                 <!-- 開くボタン -->
                 <button type="button" id="menu-open" class="btn-menu">
-                    <img src="img/favicon2.png" alt="" width="48" height="48">
+                    <img src="img/humburger2.png" alt="" width="60" height="60">
                 </button>
 
                 <div id="menu-panel">
                     <!-- 閉じるボタン -->
                     <button type="button" id="menu-close" class="btn-menu">
-                        <img src="img/favicon2.png" alt="" width="48" height="48">
+                        <img src="img/humburger2.png" alt="" width="60" height="60">
                     </button>
 
                     <!-- ナビゲーションの中身 -->
@@ -40,12 +47,52 @@
                         <li><a href="index.html">top</a></li>
                         <li><a href="about.html">about</a></li>
                         <li><a href="#">company</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="work.html">works</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
         <main>
+            <!-- 猫とプロフィール -->
+            <div class="content1 distance">
+                <div class="character-container">
+                    <div class="balloon">
+                        <p id="random-message">読み込み中...</p>
+                    </div>
+                    <img id="character" src="img/black-cat.png" alt="黒猫ちゃん">
+                </div>
+                <div class="profile">
+                    <p>大原簿記情報医療専門学校津校 情報処理科 プログラミングコース</p>
+                    <h5>植田美幸</h5>
+                    <p>中学生の頃にパソコンでタイピングの練習を始めたことがきっかけで
+                        パソコンに興味が湧き、<br>
+                        情報系の道に進みたいと思うようになりました。
+                        将来は自分のITスキルを使ってお客様<br>
+                        の役に立てるシステムやサービス
+                        を作ることが夢です！</p>
+                    <img src="img/profile.png" alt="プロフィール" style="width:200px;">
+                </div>
+            </div>
+
+            <!-- マイスキル　３つのコンテンツ -->
+            <h2>My Skill</h2>
+            <ul class="content2 distance">
+                <li>
+                    <h4>継続力</h4>
+                    <p>最後まで責任感を持って取り組むことができます！
+                        部活動やアルバイトを頑張っています</p>
+                </li>
+                <li>
+                    <h4>再起力</h4>
+                    <p>失敗しても前向き思考で再挑戦！
+                        落ち込んでもすぐ立ち直ります</p>
+                </li>
+                <li>
+                    <h4>サポート力</h4>
+                    <p>相手の意図を理解して、まとめることが得意です！
+                        聞き役に回ることが多めです</p>
+                </li>
+            </ul>
         </main>
         <footer>
             <ul class="menu">
