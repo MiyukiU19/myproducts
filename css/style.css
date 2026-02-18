@@ -120,6 +120,10 @@ h2 {
 }
 h1 {
     font-size: 50px;
+    color: black;
+}
+a {
+    text-decoration: none;
 }
 
 /* ハンバーガーメニュー */
@@ -242,6 +246,10 @@ h1 {
 }
 
 #random-message {
+    margin-top: 25px;
+    font-size: 20px;
+}
+#random-message2 {
     margin-top: 25px;
     font-size: 20px;
 }
