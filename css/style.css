@@ -305,30 +305,6 @@ a {
 }
 
 
-/* アイテムの構成 */
-.product-list {
-    display: grid;
-    gap: 30px;
-    list-style: none;
-    grid-template-columns: repeat(2,1fr);
-}
-
-.product-list img {
-    width: 100%;
-    max-width: 1360px;
-    height: 100;
-    transition: opacity 0.3s ease;
-}
-
-.product-list a {
-    color: black;
-    text-decoration: none;
-    font-size: 95%;
-}
-.product-list img:hover {
-    opacity: 0.7;
-}
-
 /* コンタクト */
 .contact-card {
     text-align: center;
@@ -347,6 +323,22 @@ a {
     border: 1px solid var(--black-cat);
     border-radius: 6px;
     font-size: 20px;
+}
+
+/* workの編集 */
+.product-list {
+    display: grid;
+    gap: 80px 50px;
+    list-style: none;
+    grid-template-columns: repeat(2,1fr);
+}
+.product-list img {
+    width: 85%;
+    max-width: 1360px;
+    height: 100;
+}
+.product-list h5 {
+    margin-bottom: 25px;
 }
 
 /* == mainの編集 （ここまで）== */
