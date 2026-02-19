@@ -148,9 +148,9 @@ a {
 .btn-menu:hover {
     transform: translateY(-3px);
 }
-#menu-close img{
+/* #menu-close img{
     transform: rotate(-90deg);
-}
+} 画像回転*/
 
 /* アクセシビリティ：キーボードフォーカス見える化 */
 .btn-menu:focus-visible{
