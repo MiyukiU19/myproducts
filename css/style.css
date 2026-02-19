@@ -212,7 +212,7 @@ a {
 .balloon {
     position: absolute;
     top: 10px;
-    left: 145px; 
+    left: 10px; 
     transform: translateX(-50%);
     background-color: #fff;
     border: 2px solid var(--black-cat);
@@ -221,6 +221,8 @@ a {
     width: 270px;
     padding: 20px;
     min-width: 120px;
+    animation: balloon-bob 2.6s ease-in-out infinite;
+    will-change: transform;      /* パフォーマンス向上のヒント */
 }
 
 /* 吹き出しのしっぽ（外側の黒いフチ） */
@@ -247,6 +249,13 @@ a {
     border-color: #fff transparent transparent;
 }
 
+/* ふわふわ上下アニメーション */
+@keyframes balloon-bob {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-8px); } /* 上に8px（お好みで調整） */
+}
+
+/* 吹き出し内のメッセージ */
 #random-message {
     margin-top: 25px;
     font-size: 20px;
@@ -263,6 +272,7 @@ a {
     border: 2px solid var(--black-cat);
     border-radius: 60px;
     background-color: #fff;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1); /* 軽い影 */
 }
 .profile h5 {
     font-size: 30px;

@@ -58,9 +58,9 @@ closeBtn.addEventListener('click',()=>{
 // ★吹き出しのランダムメッセージ
 function randomMessage() {
     const messages = [
+        "おはよう！", 
         "こんにちは！", 
         "こんばんは！", 
-        "おはよう！", 
         "はろー！", 
         "やほー！"
     ];
