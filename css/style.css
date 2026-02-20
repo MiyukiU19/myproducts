@@ -278,9 +278,14 @@ a {
     font-size: 30px;
     margin: 0;
     padding-bottom: 20px;
+    padding-left: 10px;
 }
-.profile img {
-    width: 500%;
+#favorite th{
+    text-align: right;
+    font-weight: normal;
+}
+#favorite th, td{
+    font-size: 17px;
 }
 
 /* 私についてー４つの項目 */
