@@ -320,9 +320,9 @@ a {
     color: #fff;
     padding: 12px 22px;
     margin: 20px 0;
-    border: 1px solid var(--black-cat);
+    border: 1.5px solid var(--black-cat);
     border-radius: 6px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /* workの編集 */
@@ -341,6 +341,44 @@ a {
     margin-bottom: 25px;
 }
 
+/* 私についてー４つの項目 */
+.myself-list {
+    display: grid;
+    grid-template-columns: repeat(2, 350px); /* 2列 */
+    column-gap: 30px;   /* 列のあいだの空き（お好みで調整） */
+    row-gap: 30px;      /* 行間 */
+    justify-content: center;  /* 全体をページ中央に寄せる */
+
+    /* 余白類 */
+    margin-bottom: 80px;
+    padding: 0; /* 念のため */
+    max-width: 1380px;
+    text-align: center;
+}
+
+.myself-list a {
+    display: block;                /* ボタン全体をクリック可能に */
+    color: #fff;
+    text-decoration: none; 
+    font-size: 23px;        /* 下線を消す（必要に応じて） */
+}
+
+.myself-btn {
+    border: 1.5px solid var(--black-cat);
+    border-radius: 8px;
+    padding: 40px 30px;            /* 少しだけ上下を広げて押しやすく */
+    margin: 0;                     /* gridで並べるのでここは0推奨 */
+    background-color: var(--purple-sub);
+    transition: transform .05s;
+}
+.myself-btn:hover {
+    transform: translateY(-3px);
+}
+.myself-btn:active {
+    transform: translateY(1px);
+}
+
+
 /* == mainの編集 （ここまで）== */
 
 
@@ -351,3 +389,17 @@ footer p {
     justify-content: center;
 }
 /* == footerの編集 （ここまで）== */
+
+/* 対応 */
+@media (max-width: 640px) {
+    .myself-list {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 20px;
+        justify-content: center;       /* 念のため */
+    }
+    .myself-list section {
+        justify-self: center !important; /* 両列寄せ設定を打ち消して中央に */
+        width: min(330px, 92vw);         /* スマホでのはみ出し防止（任意） */
+    }
+}
