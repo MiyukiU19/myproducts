@@ -379,6 +379,16 @@ a {
 
 
 /* aboutの編集 */
+/* プロフィール */
+.profile h5 {
+    font-size: 40px;
+    margin: 0;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+.profile p {
+    font-size: 18px;
+}
 
 /* My Skill ３つのコンテンツ*/
 .content2 {
@@ -387,7 +397,6 @@ a {
     list-style: none;
     justify-content: center;
 }
-
 .content2 li {
     background: #fff;        /* ← 白背景 */
     border: 2px solid var(--purple-sub);  /* ← 枠を既存デザインと統一 */
@@ -397,6 +406,12 @@ a {
     text-align: center;      /* 中央揃え */
     box-shadow: 0 6px 15px rgba(0,0,0,0.1); /* 軽い影 */
     transition: transform .2s ease, box-shadow .2s ease;
+}
+.my-skill {
+    text-align: center;
+}
+.my-skill img {
+    width: 900px;
 }
 
 /* workの編集 */
