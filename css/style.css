@@ -274,26 +274,48 @@ a {
 
 /* プロフィール部分 */
 .profile {
+    max-width: 600px;
+    width: 600px;
     margin: 30px 0 0 95px;
     padding: 30px 25px 0px 46px;
     border: 2px solid var(--black-cat);
-    border-radius: 60px;
+    border-radius: 30px;
     background-color: #fff;
     box-shadow: 0 6px 15px rgba(0,0,0,0.1); /* 軽い影 */
 }
-.profile h5 {
-    font-size: 30px;
-    margin: 0;
-    padding-bottom: 20px;
-    padding-left: 10px;
+.profile .info {
+    width: 100%;
+    margin-bottom: 30px;
 }
-#favorite th{
-    text-align: right;
+.profile .info  th,
+.profile .info td{
     font-weight: normal;
+    font-size: 20px;
+    padding: 20px 50px 20px 0;
 }
-#favorite th, td{
-    font-size: 17px;
+.info {
+    /* テーブルの隙間を実践にする */
+    border-collapse: collapse;
 }
+.info tr {
+    border-bottom: 1px solid #333;
+}
+/* 最後の行の線を消す */
+.info tr:last-child {
+    border-bottom: none; 
+}
+.info td{
+    padding: 15px 0;
+    margin-left: 2rem;
+}
+.info th{
+    text-align: left;
+    
+}
+.info tr:last-child th {
+    vertical-align: top; 
+}
+
 
 /* 私についてー４つの項目 */
 .myself-list {
