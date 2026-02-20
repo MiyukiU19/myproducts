@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>自己紹介ページ</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/index.js" defer></script>
+        <link rel="icon" href="img/favicon.png" type="image/svg+xml">
+    </head>
+    <body>
+        <!-- ローディング画面 -->
+        <div id="loader" aria-live="polite" aria-label="読み込み中" role="status">
+            <div class="loader__box">
+                <!-- 中央の画像（差し替えOK） -->
+                <img src="img/loading.png">
+                <!-- 5つの丸 -->
+                <div class="loader__dots" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- タイトル -->
+        <header id="header" class="wrapper">
+            <a href="index.html">
+            <h1 class="site-title">My Profile</h1>
+            </a>
+            <!-- ハンバーガーメニュー -->
+            <nav>
+                <!-- 開くボタン -->
+                <button type="button" id="menu-open" class="btn-menu">
+                    <img src="img/humburger.png" alt="" width="70" height="64">
+                </button>
+
+                <div id="menu-panel">
+                    <!-- 閉じるボタン -->
+                    <button type="button" id="menu-close" class="btn-menu">
+                        <img src="img/humburger.png" alt="" width="70" height="64">
+                    </button>
+
+                    <!-- ナビゲーションの中身 -->
+                    <ul class="menu-list">
+                        <li><a href="index.html">top</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="history.html">history</a></li>
+                        <li><a href="work.html">works</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- 猫とプロフィール -->
+            <div class="content1 distance">
+                <div class="character-container">
+                    <div class="balloon">
+                        <p id="random-message2">私について紹介するよ！</p>
+                    </div>
+                    <img id="character" src="img/black-cat.png" alt="黒猫ちゃん">
+                </div>
+                <div class="profile">
+                    <p>大原簿記情報医療専門学校津校 情報処理科 プログラミングコース</p>
+                    <h5>植田美幸</h5>
+                    <p>中学生の頃にパソコンでタイピングの練習を始めたことがきっかけで
+                        パソコンに興味が湧き、<br>
+                        情報系の道に進みたいと思うようになりました。
+                        将来は自分のITスキルを使ってお客様<br>
+                        の役に立てるシステムやサービス
+                        を作ることが夢です！</p>
+                    <img src="" alt="プロフィール" width="">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2026 Ueda Miyuki</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+</html>
