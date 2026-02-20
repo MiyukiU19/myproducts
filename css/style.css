@@ -420,6 +420,7 @@ a {
     gap: 80px 50px;
     list-style: none;
     grid-template-columns: repeat(2,1fr);
+    padding-bottom: 40px;
 }
 .product-list img {
     width: 85%;
@@ -427,7 +428,12 @@ a {
     height: 100;
 }
 .product-list h5 {
-    margin-bottom: 25px;
+    margin-bottom: 5px;
+}
+.product-list p {
+    font-size: 12px;
+    text-align: right;
+    margin: 0 90px 0 0;
 }
 
 /* == mainの編集 （ここまで）== */
