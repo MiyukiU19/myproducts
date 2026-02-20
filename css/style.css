@@ -279,7 +279,7 @@ a {
     margin: 30px 0 0 95px;
     padding: 30px 25px 0px 46px;
     border: 2px solid var(--black-cat);
-    border-radius: 30px;
+    border-radius: 2rem;
     background-color: #fff;
     box-shadow: 0 6px 15px rgba(0,0,0,0.1); /* 軽い影 */
 }
@@ -344,13 +344,17 @@ a {
     padding: 40px 30px;            /* 少しだけ上下を広げて押しやすく */
     margin: 0;                     /* gridで並べるのでここは0推奨 */
     background-color: var(--purple-sub);
-    transition: transform 0.2s ease;
+    box-shadow: 0 3px 1px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
 }
 .myself-btn:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 4px rgba(0,0,0,0.25);
 }
 .myself-btn:active {
     transform: translateY(1px);
+    box-shadow: 0 2px px rgba(0,0,0,0.15);
 }
 
 /* コンタクト */
@@ -371,10 +375,12 @@ a {
     border: 1.5px solid var(--black-cat);
     border-radius: 6px;
     font-size: 18px;
-    transition: transform 0.2s ease;
+    box-shadow: 0 3px 1px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .contact-btn:hover {
     transform: translateY(-1.5px);
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
 }
 
 
@@ -411,8 +417,22 @@ a {
     text-align: center;
 }
 .my-skill img {
-    width: 900px;
+    width: 880px;
+    padding-left: 50px;
 }
+
+/* clubの編集 */
+.club-computer img, .club-shodo img {
+    width: 500px;
+    border-radius: 25px;
+}
+.computer {
+    display: flex;
+}
+.shodo {
+    display: flex;
+}
+
 
 /* workの編集 */
 .product-list {
