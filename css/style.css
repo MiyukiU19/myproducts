@@ -122,6 +122,7 @@ h2 {
 h1 {
     font-size: 50px;
     color: black;
+    justify-content: center;
 }
 a {
     text-decoration: none;
@@ -167,8 +168,10 @@ a {
     padding: 8rem 2rem 2rem;
     width: 20vw;
     height: 100vh;
-    background-color: rgba(248, 247, 247, 0.8);
+    background-color: var(--purple-sub);
     translate: 100vw;
+    font-weight: bold;
+    /* border-left: 1px solid #333;s */
 }
 .menu-list {
     list-style: none;
@@ -180,10 +183,14 @@ a {
 .menu-list a {
     font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: #fff;
 }
 .menu-list a:hover {
-    opacity: 60%;
+    opacity: 70%;
+}
+.menu-list li:hover {
+    transform: translateY(-1.5px);
+    transition: transform 0.3s ease;
 }
 /* == headerの編集 （ここまで）== */
 
@@ -331,10 +338,10 @@ a {
     padding-bottom: 40px;
 }
 .contact-p {
-    padding-bottom: 20px;
     font-size: 17px;
 }
 .contact-btn {
+    display: inline-block;
     background-color: var(--purple-sub);
     color: #fff;
     padding: 12px 22px;
@@ -342,6 +349,10 @@ a {
     border: 1.5px solid var(--black-cat);
     border-radius: 6px;
     font-size: 18px;
+    transition: transform 0.2s ease;
+}
+.contact-btn:hover {
+    transform: translateY(-1.5px);
 }
 
 
