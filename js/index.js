@@ -60,8 +60,9 @@ function randomMessage() {
     const messages = [
         "おはよう！", 
         "こんにちは！", 
-        "こんばんは！", 
+        "今日も頑張ろう！", 
         "ようこそ！", 
+        "調子はどう？", 
     ];
 
     const el = document.getElementById("random-message");

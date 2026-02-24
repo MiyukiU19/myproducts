@@ -13,7 +13,14 @@
 /* == 全体の編集 （ここから）== */
 body {
     background-color: var(--purple-main);
+    font-family: "kiwi-maru-regular";
 }
+.kiwi-maru-regular {
+    font-family: "Kiwi Maru", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* wrapperで表示サイズを調整する */
 .wrapper {
     width: 100%;
@@ -265,7 +272,7 @@ a {
 /* 吹き出し内のメッセージ */
 #random-message {
     margin-top: 25px;
-    font-size: 20px;
+    font-size: 18px;
 }
 #random-message2 {
     margin-top: 25px;
@@ -426,13 +433,22 @@ a {
     width: 500px;
     border-radius: 25px;
 }
-.computer {
+.computer , .shodo {
     display: flex;
+    gap: 50px;
+    margin: 50px 50px;
 }
-.shodo {
-    display: flex;
+.computer p , .shodo p {
+    font-size: 22px;
+}
+.club-computer {
+    margin-bottom: 100px;
 }
 
+/* futureの編集 */
+h6 {
+    font-size: 20px;
+}
 
 /* workの編集 */
 .product-list {
