@@ -59,7 +59,7 @@ closeBtn.addEventListener('click',()=>{
 function randomMessage() {
     const messages = [
         "おはよう！", 
-        "こんにちは！", 
+        "見てくれてありがとう！", 
         "今日も頑張ろう！", 
         "ようこそ！", 
         "調子はどう？", 
