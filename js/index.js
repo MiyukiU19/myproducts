@@ -31,7 +31,7 @@ const menuPanel = document.querySelector("#menu-panel") //パネル全体
 const menuLists = document.querySelectorAll(".menu-list li") //リスト配列
 // メニュー全体で使いまわすtimingOptions
 const menuOptions = {
-    duration: 1400,
+    duration: 900,
     easing:'ease',
     fill:'forwards'
 }
@@ -58,11 +58,11 @@ closeBtn.addEventListener('click',()=>{
 // ★吹き出しのランダムメッセージ
 function randomMessage() {
     const messages = [
-        "おはよう！", 
+        "今日もコツコツ成長中", 
         "見てくれてありがとう！", 
         "今日も頑張ろう！", 
         "ようこそ！", 
-        "調子はどう？", 
+        "ゆっくりしていってね", 
     ];
 
     const el = document.getElementById("random-message");

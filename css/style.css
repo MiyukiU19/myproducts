@@ -173,7 +173,7 @@ a {
     right: 0;
     z-index: 5;
     padding: 8rem 2rem 2rem;
-    width: 20vw;
+    width: min(78vw,320px);
     height: 100vh;
     background-color: var(--purple-sub);
     translate: 100vw;
@@ -271,7 +271,7 @@ a {
 
 /* 吹き出し内のメッセージ */
 #random-message {
-    margin-top: 25px;
+    margin-top: 27px;
     font-size: 18px;
 }
 #random-message2 {
@@ -446,8 +446,19 @@ a {
 }
 
 /* futureの編集 */
+.content3 {
+    display: flex;
+    gap: 60px 100px;
+    justify-content: center;
+}
 h6 {
+    font-size: 22px;
+}
+h4 {
     font-size: 20px;
+}
+.career-plan li {
+    list-style: square;
 }
 
 /* workの編集 */
