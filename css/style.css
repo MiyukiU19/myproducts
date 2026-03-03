@@ -494,8 +494,77 @@ footer p {
 }
 /* == footerの編集 （ここまで）== */
 
-/* 対応 */
+/* レスポンシブ対応 */
 @media (max-width: 640px) {
+    h1{
+        font-size: 38px;
+    }
+    .btn-menu{
+        right: 10px;
+        top: 10px;
+        z-index: 4; /* 重なり位置 */
+        margin-right: 2.5rem;
+        padding: 0.5rem 1rem;
+        height: 3rem;
+        width: 3rem;
+    }
+    .btn-menu img {
+        width: 57px;
+        height: 52px;
+    }
+
+    /* indexの編集 */
+    .content1 {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    /* 吹き出し */
+    .character-container {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+    }
+    /* 猫の画像 */
+    .character-container img {
+        width: 300px;
+        margin: 130px 0 0 35px;
+    }
+    /* 吹き出し */
+    .balloon {
+        top: 20px;
+        left: 53px; 
+        height: 115px;
+        width: 250px;
+        padding: 20px;
+        min-width: 120px;
+    }
+    /* 吹き出し内のメッセージ */
+    #random-message {
+        margin: 18px;
+        font-size: 17px;
+    }
+    #random-message2 {
+        margin: 0px;
+        font-size: 20px;
+    }
+    /* プロフィール部分 */
+    .profile {
+        max-width: 350px;
+        width: 350px;
+        margin: 60px 0 50px 14px;
+        padding: 20px 35px 0px 35px;
+    }
+    .profile .info  th,
+    .profile .info td{
+        font-size: 15px;
+        padding: 20px 30px 20px 0;
+    }
+    .info td{
+        padding: 10px 0;
+    }
+    
+    /* 4つの項目 */
     .myself-list {
         grid-template-columns: 1fr;
         column-gap: 0;
@@ -505,5 +574,11 @@ footer p {
     .myself-list section {
         justify-self: center !important; /* 両列寄せ設定を打ち消して中央に */
         width: min(330px, 92vw);         /* スマホでのはみ出し防止（任意） */
+    }
+    .myself-list a {
+    font-size: 19px;
+    }
+    .contact-p {
+    font-size: 12px;
     }
 }
