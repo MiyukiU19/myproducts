@@ -462,12 +462,16 @@ h4 {
 }
 
 /* workの編集 */
+.work h2 {
+    padding-bottom: 30px;
+}
 .product-list {
     display: grid;
     gap: 80px 50px;
     list-style: none;
     grid-template-columns: repeat(2,1fr);
     padding-bottom: 40px;
+    margin-left: 20px;
 }
 .product-list img {
     width: 85%;
@@ -545,8 +549,8 @@ footer p {
         font-size: 17px;
     }
     #random-message2 {
-        margin: 0px;
-        font-size: 20px;
+        margin: 18px;
+        font-size: 15px;
     }
     /* プロフィール部分 */
     .profile {
@@ -563,7 +567,6 @@ footer p {
     .info td{
         padding: 10px 0;
     }
-    
     /* 4つの項目 */
     .myself-list {
         grid-template-columns: 1fr;
@@ -578,7 +581,101 @@ footer p {
     .myself-list a {
     font-size: 19px;
     }
+    /* コンタクト */
     .contact-p {
     font-size: 12px;
+    }
+
+    /* aboutの編集 */
+    .profile h5 {
+        font-size: 25px;
+        margin: 0;
+        padding-bottom: 20px;
+        padding-left: 10px;
+    }
+    .profile p {
+        font-size: 14px;
+        padding-bottom: 15px;
+    }
+
+    /* My Skill ３つのコンテンツ*/
+    .content2 {
+        display: block;
+    }
+    .content2 li {
+        width: 315px;            /* カード幅 */
+        padding: 20px;           /* 内側余白 */
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .content2 h4 {
+        font-size: 18px;
+    }
+    .my-skill img {
+        width: 300px;
+        padding-left: 0px;
+        margin: 0;
+    }
+
+    /* clubの編集 */
+    .club-computer img, .club-shodo img {
+        width: 300px;
+        border-radius: 25px;
+        margin-bottom: 20px;
+    }
+    .computer , .shodo {
+        display: block;
+        gap: 50px;
+        margin: 0px 0px;
+    }
+    .computer p , .shodo p {
+        font-size: 16px;
+    }
+    .club-computer {
+        margin-bottom: 50px;
+    }
+    /* futureの編集 */
+    .content3 {
+        display: block;
+        margin: 15px;
+    }
+    h6 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 17px;
+    }
+    .career-plan {
+        margin-bottom: 40px;
+    }
+    .career-plan li {
+        list-style: square;
+    }
+    .career-plan p , .license p{
+        font-size: 15px;
+    }
+    /* workの編集 */
+    .work h2 {
+        padding-bottom: 0px;
+    }
+    .product-list {
+        display: block;
+    }
+    .product-list li {
+        margin-bottom: 40px;
+    }
+    .product-list img {
+        width: 290px;
+        max-width: 600px;
+        height: 100;
+    }
+    .product-list h5 {
+        font-size: 19px;
+        margin-bottom: 5px;
+    }
+    .product-list p {
+        font-size: 12px;
+        text-align: right;
+        margin: 0 45px 0 0;
     }
 }
